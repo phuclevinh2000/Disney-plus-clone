@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 import { selectMovies } from '../features/movie/movieSlice'
 import { useSelector } from 'react-redux'
 
@@ -8,36 +9,21 @@ const Movies = () => {
     const movies = useSelector(selectMovies);
 
 
-    console.log("this is movies", movies);
+    // console.log("this is movies", movies);
 
     return (
         <Container>
             <h4>Recommened for you</h4>
             <Content>
-                <Wrap>
-                    <img src="https://thestreamable.com/media/pages/news/when-will-black-widow-be-free-for-disney-plus-subscribers/3b60a2b175-1625582541/black-widow-2020-768x432.jpg" alt="#" />
-                </Wrap>
-                <Wrap>
-                    <img src="https://thestreamable.com/media/pages/news/when-will-black-widow-be-free-for-disney-plus-subscribers/3b60a2b175-1625582541/black-widow-2020-768x432.jpg" alt="#" />
-                </Wrap>
-                <Wrap>
-                    <img src="https://thestreamable.com/media/pages/news/when-will-black-widow-be-free-for-disney-plus-subscribers/3b60a2b175-1625582541/black-widow-2020-768x432.jpg" alt="#" />
-                </Wrap>
-                <Wrap>
-                    <img src="https://thestreamable.com/media/pages/news/when-will-black-widow-be-free-for-disney-plus-subscribers/3b60a2b175-1625582541/black-widow-2020-768x432.jpg" alt="#" />
-                </Wrap>
-                <Wrap>
-                    <img src="https://thestreamable.com/media/pages/news/when-will-black-widow-be-free-for-disney-plus-subscribers/3b60a2b175-1625582541/black-widow-2020-768x432.jpg" alt="#" />
-                </Wrap>
-                <Wrap>
-                    <img src="https://thestreamable.com/media/pages/news/when-will-black-widow-be-free-for-disney-plus-subscribers/3b60a2b175-1625582541/black-widow-2020-768x432.jpg" alt="#" />
-                </Wrap>
-                <Wrap>
-                    <img src="https://thestreamable.com/media/pages/news/when-will-black-widow-be-free-for-disney-plus-subscribers/3b60a2b175-1625582541/black-widow-2020-768x432.jpg" alt="#" />
-                </Wrap>
-                <Wrap>
-                    <img src="https://thestreamable.com/media/pages/news/when-will-black-widow-be-free-for-disney-plus-subscribers/3b60a2b175-1625582541/black-widow-2020-768x432.jpg" alt="#" />
-                </Wrap>
+                { movies && 
+                    movies.map((movie) => (
+                        <Wrap key={movie.id}>
+                            <Link to={`/detail/${movie.id}`}>
+                                <img src={movie.cardImg} alt=""/>
+                            </Link>
+                        </Wrap>
+                    ))
+                }
             </Content>
         </Container>
     )

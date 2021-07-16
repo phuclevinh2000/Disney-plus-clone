@@ -31,7 +31,7 @@ const Header = () => {
                     <span>SERIES</span>
                 </a>
             </NavMenu>
-            <UserImg src="https://scontent-hel3-1.xx.fbcdn.net/v/t1.6435-9/156501902_1735233536656019_3364926954326873439_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=fXqsQcsHproAX_SS3Os&tn=2WnSsk8Uz5bg0sB8&_nc_ht=scontent-hel3-1.xx&oh=a628507139939b32a0c27bdd138ef609&oe=60EE2635"/>
+            <UserImg src="https://scontent-hel3-1.xx.fbcdn.net/v/t1.6435-9/156501902_1735233536656019_3364926954326873439_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=THUnrsNUSrwAX99Qjc-&tn=2WnSsk8Uz5bg0sB8&_nc_ht=scontent-hel3-1.xx&oh=4b86c277a908f33fec9ab12aae39d9d1&oe=60F60F35"/>
         </Nav>
     )
 }
