@@ -1,23 +1,119 @@
 import React from 'react'
 import styled from 'styled-components'
+import HoverVideoPlayer from 'react-hover-video-player';
 
 const Viewers = () => {
     return (
         <Container>
             <Wrap>
-                <img src="/images/viewers-disney.png" alt="#"/>
+                {/* <img src="/images/viewers-disney.png" alt="#"/> */}
+                <HoverVideoPlayer
+                    videoSrc="/videos/video-disney.mp4"
+                    pausedOverlay={
+                        <img
+                            src="/images/viewers-disney.png"
+                            alt=""
+                            style={{
+                                // Make the image expand to cover the video's dimensions
+                                width: "100%",
+                                height: "100%",
+                                objectFit: "cover",
+                                background: "#252939",
+                        }}
+                        />
+                    }
+                    loadingOverlay={
+                        <div className="loading-spinner-overlay" />
+                    }
+                />
             </Wrap>
             <Wrap>
-                <img src="/images/viewers-pixar.png" alt="#"/>
+                {/* <img src="/images/viewers-pixar.png" alt="#"/> */}
+                <HoverVideoPlayer
+                    videoSrc="/videos/video-pixar.mp4"
+                    pausedOverlay={
+                        <img
+                            src="/images/viewers-pixar.png"
+                            alt=""
+                            style={{
+                                // Make the image expand to cover the video's dimensions
+                                width: "100%",
+                                height: "100%",
+                                objectFit: "cover",
+                                background: "#252939",
+                        }}
+                        />
+                    }
+                    loadingOverlay={
+                        <div className="loading-spinner-overlay" />
+                    }
+                />
             </Wrap>
             <Wrap>
-                <img src="/images/viewers-marvel.png" alt="#"/>
+                {/* <img src="/images/viewers-marvel.png" alt="#"/> */}
+                <HoverVideoPlayer
+                    videoSrc="/videos/video-marvel.mp4"
+                    pausedOverlay={
+                        <img
+                            src="/images/viewers-marvel.png"
+                            alt=""
+                            style={{
+                                // Make the image expand to cover the video's dimensions
+                                width: "100%",
+                                height: "100%",
+                                objectFit: "cover",
+                                background: "#252939",
+                        }}
+                        />
+                    }
+                    loadingOverlay={
+                        <div className="loading-spinner-overlay" />
+                    }
+                />
             </Wrap>
             <Wrap>
-                <img src="/images/viewers-starwars.png" alt="#"/>
+                {/* <img src="/images/viewers-starwars.png" alt="#"/> */}
+                <HoverVideoPlayer
+                    videoSrc="/videos/video-star-wars.mp4"
+                    pausedOverlay={
+                        <img
+                            src="/images/viewers-starwars.png"
+                            alt=""
+                            style={{
+                                // Make the image expand to cover the video's dimensions
+                                width: "100%",
+                                height: "100%",
+                                objectFit: "cover",
+                                background: "#252939",
+                        }}
+                        />
+                    }
+                    loadingOverlay={
+                        <div className="loading-spinner-overlay" />
+                    }
+                />
             </Wrap>
             <Wrap>
-                <img src="/images/viewers-national.png" alt="#"/>
+                {/* <img src="/images/viewers-national.png" alt="#"/> */}
+                <HoverVideoPlayer
+                    videoSrc="/videos/video-geographic.mp4"
+                    pausedOverlay={
+                        <img
+                            src="/images/viewers-national.png"
+                            alt=""
+                            style={{
+                                // Make the image expand to cover the video's dimensions
+                                width: "100%",
+                                height: "100%",
+                                objectFit: "cover",
+                                background: "#252939",
+                        }}
+                        />
+                    }
+                    loadingOverlay={
+                        <div className="loading-spinner-overlay" />
+                    }
+                />
             </Wrap>
         </Container>
     )
